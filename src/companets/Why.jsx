@@ -54,17 +54,18 @@ function Why(   ) {
                             slidesPerGroup={1}
                             spaceBetween={25}
                             modules={[Navigation]}
+                            touchStartPreventDefault={false}
                             className="why_swiper"
                             breakpoints={{
                                 0: {
                                     slidesPerView: 1,
-                                    allowTouchMove: false,
+                                    allowTouchMove: true,
                                 },
                                 400: {
                                     slidesPerView: 1,
                                     slidesPerGroup: 1,
                                     spaceBetween: 20,
-                                    allowTouchMove: false,
+                                    allowTouchMove: true,
                                 },
                                 1000: {
                                     slidesPerView: 3,

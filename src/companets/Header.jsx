@@ -14,7 +14,7 @@ function Header() {
             <Link className='header_link' to='/mentorlar'>Mentorlar</Link>
             <Link className='header_link' to='/savolar'>Tez-tez so‘raladigan savollar</Link>
             <Link className='header_link' to='boglanish'>Bog‘lanish</Link>
-            <Link className='header_link' to='royxat'>Ro‘yxatdan o‘tish</Link>
+            <Link className='header_link' to='login'>Ro‘yxatdan o‘tish</Link>
           </div>
           <div className="header_mobile">
             <button className='header_menu-btn'><MenuIcon/></button>
