@@ -1,0 +1,83 @@
+.statistics {
+
+    &_row {
+        @include flex(center, space-around);
+    }
+
+    &_item{
+        position: relative;
+        &:not(:last-child){
+            &::before{
+                position: absolute;
+                content: '';
+                top: 50%;
+                transform: translate(-50%, -50%);
+                right: -100px;
+                background-color: $gray-E3E3E3;
+                width: 1px;
+                height: 61px;
+            }
+        }
+    }
+
+    &_number {
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 110%;
+        letter-spacing: -0.02em;
+        color: $gray-1D70B7;
+    }
+
+    &_subtitle {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        text-align: center;
+        color: $gray-1F1F1F;
+    }
+
+    @include media(900){
+
+        &_item{
+            &:not(:last-child){
+                &::before{
+                    top: 50%;
+                    right: -60px;
+                }
+            }
+        }
+
+        &_number{
+            font-size: 40px;
+        }
+    }
+
+    @include media (700){
+        &_row{
+            @include flex-column(center, center, column);
+            row-gap: 67px;
+            text-align: center;
+        }
+
+        &_item{
+            &:not(:last-child){
+                &::before{
+                    top: 100px;
+                    left: 50%;
+                    width: 140px;
+                    height: 1px;
+                }
+            }
+        }
+    }
+
+    @include media(400){
+        &_number{
+            font-size: 24px;
+        }
+
+        &_subtitle{
+            font-size: 16px;
+        }
+    }
+}

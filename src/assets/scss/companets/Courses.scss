@@ -1,0 +1,73 @@
+.courses {
+    padding: 30px 0;
+    margin: 60px 0;
+
+
+    &_title {
+        margin-bottom: 40px;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 125%;
+        letter-spacing: -0.01em;
+        color: $gray-1F1F1F;
+    }
+
+    &_cards {
+        @include flex(center, center);
+        flex-wrap: wrap;
+        gap: 18px;
+    }
+
+    &_card {
+        display: inline-block;
+        border-radius: 24px;
+        background-color: $gary-F5F5F5;
+        padding: 18px 24px;
+        cursor: pointer;
+    }
+
+    &_card-title {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 150%;
+        color: $gray-1D70B7;
+    }
+
+    &_card-subtitle {
+        max-width: 373px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 125%;
+        color: $gray-1F1F1F;
+        margin: 20px 0;
+    }
+
+    &_list {
+        @include flexcenter(center);
+        column-gap: 40px;
+    }
+
+    &_item-title {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 125%;
+        color: $gray-858585;
+        min-width: 90px;
+    }
+
+    &_item-info {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        color: $gray-1F1F1F;
+    }
+
+    @include media(415) {
+        &_list {
+            gap: 20px;
+            justify-content: space-between;
+        }
+
+        margin: 30px 0;
+    }
+}

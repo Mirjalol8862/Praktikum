@@ -1,0 +1,88 @@
+.header {
+    padding: 16px 0;
+
+    &_row {
+        @include flex(center, space-between)
+    }
+
+    &_nav {
+        @include center();
+        column-gap: 40px;
+    }
+
+    &_link {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        color: $gray-1F1F1F;
+        transition: all 0.1s ease;
+
+        &:last-child {
+            border-radius: 16px;
+            padding: 10px 24px;
+            background-color: $gray-00FFA3;
+            color: $gray-1F1F1F;
+            border: 3px solid transparent;
+
+            &:hover{
+                border-radius: 0;
+                transform: rotate(-2deg);
+                border-color: $gray-1F1F1F;
+            }
+        }   
+
+        &:not(:last-child):hover{
+            color: $gray-00FFA3;
+        }
+    }
+
+    &_mobile {
+        display: none;
+    }
+
+    // Planshet Display
+
+    @include media(960) {
+        &_nav{
+            column-gap: 20px;
+        }
+    }
+
+    @include media(880){
+        &_nav{
+            column-gap: 12px;
+        }
+        
+        &_link:last-child{
+            padding: 10px 13px;
+            font-size: 15px;
+        }
+    }
+
+    @include media (816){
+        &_link{
+            font-size: 14px;
+        }
+        
+        &_nav{
+            column-gap: 10px;
+        }
+    }
+
+    @include media (755){
+        .container{
+            padding: 0 10px;
+        }
+
+    }
+
+    @include media (730){
+        &_nav{
+            display: none;
+        }
+        
+        &_mobile{
+            display: block;
+        }
+    }
+}

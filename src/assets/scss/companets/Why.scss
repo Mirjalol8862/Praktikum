@@ -1,0 +1,63 @@
+.why {
+    padding: 30px 0;
+    margin-bottom: 30px;
+
+    &_top {
+        @include flex(center, space-between);
+    }
+
+    &_buttons {
+        @include flexcenter(center);
+        column-gap: 16px;
+    }
+
+    &_title {
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 125%;
+        letter-spacing: -0.01em;
+        color: $gray-1F1F1F;
+        margin-bottom: 40px;
+    }
+
+    &_card {
+        width: 100%;
+        padding: 24px;
+        border-radius: 24px;
+        background-color: $gary-F5F5F5;
+        cursor: pointer;
+        flex-shrink: 0;
+    }
+
+    &_card-title {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 150%;
+        color: $gray-1D70B7;
+        margin: 40px 0 13px 0;
+    }
+
+    &_card-subtitle {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 125%;
+        color: $gray-1F1F1F;
+    }
+
+    @include media(400) {
+        &_btn {
+            display: none;
+        }
+
+        .swiper-wrapper {
+            display: flex;
+            flex-direction: column;
+            row-gap: 16px;
+        }
+
+        .container {
+            padding: 0 10px;
+        }
+    }
+
+}

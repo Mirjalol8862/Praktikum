@@ -1,0 +1,27 @@
+@mixin flex($a, $j) {
+    display: flex;
+    align-items: $a;
+    justify-content: $j;
+}
+
+@mixin center() {
+    @include flex(center, center);
+}
+
+@mixin flexcenter($a) {
+    display: flex;
+    align-items: $a;
+}
+
+@mixin flex-column($a, $j, $d) {
+    display: flex;
+    align-items: $a;
+    justify-content: $j;
+    flex-direction: $d;
+}
+
+@mixin media($size) {
+    @media screen and (max-width: #{$size}px) {
+        @content;
+    }
+}

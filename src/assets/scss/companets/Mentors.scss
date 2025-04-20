@@ -1,0 +1,79 @@
+.mentors {
+    margin: 30px 0;
+    padding: 25px 0;
+
+    &_title {
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 125%;
+        letter-spacing: -0.01em;
+        color: $gray-1F1F1F;
+        margin-bottom: 25px;
+    }
+
+    &_cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+        gap: 20px;
+        margin: 25px 0;
+    }
+
+    &_card {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+        border-radius: 32px;
+        cursor: pointer;
+    }
+
+    &_card-title {
+        position: absolute;
+        top: 16px;
+        left: 16px;
+        border-radius: 40px;
+        padding: 8px 12px;
+        background: rgba(0, 0, 0, 0.64);
+
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 150%;
+        color: $gray-FFFFFF;
+    }
+
+    &_card-image {
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &_card-content {
+        position: absolute;
+        bottom: 16px;
+        left: 16px;
+    }
+
+    &_card-data {
+        display: inline-block;
+        border-radius: 20px;
+        padding: 8px  12px;
+        font-weight: 500;
+        font-size: 14px;
+        color: $gray-FFFFFF;
+        margin-bottom: 8px;
+        background: rgba(0, 0, 0, 0.64);
+        text-align: center;
+    }
+
+    &_card-name {
+        border-radius: 40px;
+        padding: 8px 12px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 150%;
+        color: $gray-FFFFFF;
+        background: rgba(0, 0, 0, 0.64);
+    }
+}

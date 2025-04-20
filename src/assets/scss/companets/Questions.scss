@@ -1,0 +1,24 @@
+.questions {
+    margin: 30px 0;
+    padding: 30px 0;
+
+    &_title {
+        margin-bottom: 20px;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 125%;
+        letter-spacing: -0.01em;
+        color: $gray-1F1F1F;
+    }
+
+    &_subtitle {
+        font-weight: 500;
+        font-size: 16px;
+        color: $gray-858585;
+    }
+}
+
+.rs-panel-group-bordered{
+    margin-bottom: 20px;
+    background-color: $gary-F5F5F5;
+}
