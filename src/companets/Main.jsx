@@ -1,6 +1,7 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import Home from '../pages/Home'
+import NotFound from './NotFound'
 
 
 function Main() {
@@ -8,6 +9,7 @@ function Main() {
     <main className='main'>
       <Routes>
         <Route path='/' element={<Home />} />
+        <Route path='*' element={<NotFound/>}/>
       </Routes>
     </main>
   )
