@@ -64,23 +64,25 @@ function OpinionList(props) {
                         breakpoints={{
                             0: {
                                 slidesPerView: 1,
-                                allowTouchMove: false,
+                                allowTouchMove: true,
                             },
                             400: {
                                 slidesPerView: 1,
                                 slidesPerGroup: 1,
                                 spaceBetween: 20,
-                                allowTouchMove: false,
+                                allowTouchMove: true,
                             },
                             1000: {
                                 slidesPerView: 3,
                                 slidesPerGroup: 1,
                                 spaceBetween: 30,
+                                allowTouchMove: true,
                             },
                             1200: {
                                 slidesPerView: 4,
                                 slidesPerGroup: 1,
                                 spaceBetween: 35,
+                                allowTouchMove: true,
                             },
                         }}
                     >
